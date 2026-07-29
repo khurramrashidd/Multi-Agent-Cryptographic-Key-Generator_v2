@@ -1,0 +1,103 @@
+{
+ "env": {
+  "python": "3.12.13",
+  "machine": "x86_64",
+  "system": "Linux-6.6.122+-x86_64-with-glibc2.35",
+  "pycryptodome": "3.23.0",
+  "scipy": "1.16.3",
+  "cpu": "Intel(R) Xeon(R) CPU @ 2.20GHz"
+ },
+ "aes": {
+  "n": 10000,
+  "bytes": 32,
+  "H_mean": 4.881500147837643,
+  "H_sd": 0.08166089182719158,
+  "H_min": 4.515319531114783,
+  "H_ceiling": 5.0,
+  "monobit_pass": 0.9891,
+  "monobit_ci95": [
+   0.9868688476233592,
+   0.9909555251704448
+  ],
+  "monobit_vs_nominal_p": 0.36532153102313114,
+  "ks_uniform_p": 3.6326315143699886e-22,
+  "trans_mean": 0.49985607843137253,
+  "gen_ms": 0.0008878249999952458,
+  "val_ms": 0.04860959900000808
+ },
+ "ecc": {
+  "n": 1000,
+  "bytes": 32,
+  "H_mean": 4.885435995699001,
+  "H_sd": 0.07965788198806828,
+  "H_min": 4.577819531114783,
+  "H_ceiling": 5.0,
+  "monobit_pass": 0.986,
+  "monobit_ci95": [
+   0.9766379658824643,
+   0.991642424869576
+  ],
+  "monobit_vs_nominal_p": 0.20057462486658634,
+  "ks_uniform_p": 0.0040786535784857825,
+  "trans_mean": 0.49946666666666667,
+  "gen_ms": 0.0653432269999712,
+  "val_ms": 0.04746876600006544
+ },
+ "ecc_pem_pass": 0.0,
+ "ecc_der_pass": 0.016,
+ "ecc_pem_H": 5.585215638108794,
+ "ecc_der_H": 6.411624459838476,
+ "rsa": {
+  "n": 200,
+  "bytes": 256,
+  "H_mean": 7.174396616069833,
+  "H_sd": 0.05566032998669217,
+  "H_min": 7.02848675579021,
+  "H_ceiling": 8.0,
+  "monobit_pass": 0.99,
+  "monobit_ci95": [
+   0.9642782382838232,
+   0.9972533418664556
+  ],
+  "monobit_vs_nominal_p": 1.0,
+  "ks_uniform_p": 0.830136591824428,
+  "trans_mean": 0.5002393746946752,
+  "gen_ms": 854.4029702149999,
+  "val_ms": 0.3793151700006092
+ },
+ "rsa_pem_pass": 0.0,
+ "rsa_pem_H": 6.024849350428127,
+ "aes_throughput_keys_per_s": 20066.40382380514,
+ "faults": {
+  "control_csprng": {
+   "per_key_detection": 0.018,
+   "duplicates": 0,
+   "n": 2000,
+   "keys_for_999_detection": 381
+  },
+  "stuck_at": {
+   "per_key_detection": 1.0,
+   "duplicates": 1999,
+   "n": 2000,
+   "keys_for_999_detection": 1
+  },
+  "biased_0.55": {
+   "per_key_detection": 0.174,
+   "duplicates": 0,
+   "n": 2000,
+   "keys_for_999_detection": 37
+  },
+  "mersenne_twister": {
+   "per_key_detection": 0.0175,
+   "duplicates": 0,
+   "n": 2000,
+   "keys_for_999_detection": 392
+  },
+  "debian_15bit_pool": {
+   "per_key_detection": 0.019,
+   "duplicates": 53,
+   "n": 2000,
+   "keys_for_999_detection": 361
+  }
+ }
+}
