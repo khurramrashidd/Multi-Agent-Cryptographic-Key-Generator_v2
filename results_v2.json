@@ -1,0 +1,313 @@
+{
+ "env": {
+  "python": "3.13.18",
+  "machine": "x86_64",
+  "system": "Linux-6.18.44-fc-v653-x86_64-with-glibc2.39",
+  "numpy": "2.5.3",
+  "pycryptodome": "4.5.0",
+  "scipy": "1.18.1",
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz"
+ },
+ "aes": {
+  "n": 10000,
+  "bytes": 32,
+  "H_ceiling": 5.0,
+  "H_expected_uniform": 4.88190524005951,
+  "H_sd_uniform": 0.08168055557736714,
+  "thr_ruleA": 4.5,
+  "thr_ruleB": 4.5625,
+  "H_mean": 4.88103701065935,
+  "H_sd": 0.08101621788746101,
+  "H_min": 4.390319531114783,
+  "entropy_pass_ruleA": 0.9997,
+  "entropy_pass_ruleB": 0.9988,
+  "monobit_pass": 0.9901,
+  "monobit_ci95": [
+   0.9879626060188439,
+   0.9918609987782189
+  ],
+  "monobit_vs_nominal_p": 0.9599381942250862,
+  "transition_pass": 0.9906,
+  "trans_mean": 0.49957333333333337,
+  "joint_accept_ruleA": 0.9806,
+  "joint_accept_ruleB": 0.9797,
+  "gen_ms": 0.0005070551000017076,
+  "val_ms": 0.030648710500031484
+ },
+ "ecc": {
+  "n": 1000,
+  "bytes": 32,
+  "H_ceiling": 5.0,
+  "H_expected_uniform": 4.88190524005951,
+  "H_sd_uniform": 0.08168055557736714,
+  "thr_ruleA": 4.5,
+  "thr_ruleB": 4.5625,
+  "H_mean": 4.883185995699001,
+  "H_sd": 0.08143727213926366,
+  "H_min": 4.538909765557392,
+  "entropy_pass_ruleA": 1.0,
+  "entropy_pass_ruleB": 0.999,
+  "monobit_pass": 0.988,
+  "monobit_ci95": [
+   0.9791427315245017,
+   0.9931223521935965
+  ],
+  "monobit_vs_nominal_p": 0.5215131083893529,
+  "transition_pass": 0.993,
+  "trans_mean": 0.5002156862745099,
+  "joint_accept_ruleA": 0.981,
+  "joint_accept_ruleB": 0.98,
+  "gen_ms": 0.028889558999935616,
+  "val_ms": 0.0305837270000211
+ },
+ "rsa": {
+  "n": 200,
+  "bytes": 256,
+  "H_ceiling": 8.0,
+  "H_expected_uniform": 7.174557961179535,
+  "H_sd_uniform": 0.05241055089597865,
+  "thr_ruleA": 7.2,
+  "thr_ruleB": 7.006083041876233,
+  "H_mean": 7.175931623774108,
+  "H_sd": 0.054428955297496216,
+  "H_min": 6.960670387044312,
+  "entropy_pass_ruleA": 0.31,
+  "entropy_pass_ruleB": 0.995,
+  "monobit_pass": 0.98,
+  "monobit_ci95": [
+   0.9497129130941735,
+   0.9921955735836505
+  ],
+  "monobit_vs_nominal_p": 0.14196596555525615,
+  "transition_pass": 0.99,
+  "trans_mean": 0.49917440156326337,
+  "joint_accept_ruleA": 0.31,
+  "joint_accept_ruleB": 0.965,
+  "gen_ms": 288.09612348500025,
+  "val_ms": 0.07215751999979148
+ },
+ "rsa_retry_impact": {
+  "expected_attempts_ruleA": 3.2258064516129026,
+  "fail_closed_prob_ruleA": 0.024461940606547578,
+  "expected_attempts_ruleB": 1.0362694300518136,
+  "fail_closed_prob_ruleB": 2.7585473535156497e-15
+ },
+ "entropy_reference": {
+  "16": {
+   "mean": 3.9421150549267763,
+   "sd": 0.08288774139071776,
+   "q001": 3.577819531114783,
+   "ceiling": 4.0,
+   "thr_ruleA": 3.6,
+   "ruleA_false_reject": 0.00265,
+   "ruleB_false_reject": 0.0004
+  },
+  "24": {
+   "mean": 4.496520889225168,
+   "sd": 0.08248085602276871,
+   "q001": 4.136842188131012,
+   "ceiling": 4.584962500721156,
+   "thr_ruleA": 4.126466250649041,
+   "ruleA_false_reject": 0.0004,
+   "ruleB_false_reject": 0.00045
+  },
+  "32": {
+   "mean": 4.88190524005951,
+   "sd": 0.08168055557736714,
+   "q001": 4.5625,
+   "ceiling": 5.0,
+   "thr_ruleA": 4.5,
+   "ruleA_false_reject": 0.0,
+   "ruleB_false_reject": 0.0005
+  },
+  "128": {
+   "mean": 6.549859652478146,
+   "sd": 0.06739866901347771,
+   "q001": 6.327819531114784,
+   "ceiling": 7.0,
+   "thr_ruleA": 6.3,
+   "ruleA_false_reject": 0.0003,
+   "ruleB_false_reject": 0.00105
+  },
+  "256": {
+   "mean": 7.174557961179535,
+   "sd": 0.05241055089597865,
+   "q001": 7.006083041876233,
+   "ceiling": 8.0,
+   "thr_ruleA": 7.2,
+   "ruleA_false_reject": 0.67815,
+   "ruleB_false_reject": 0.00055
+  },
+  "512": {
+   "mean": 7.590374081559954,
+   "sd": 0.03363327316082212,
+   "q001": 7.482576301075675,
+   "ceiling": 8.0,
+   "thr_ruleA": 7.2,
+   "ruleA_false_reject": 0.0,
+   "ruleB_false_reject": 0.0014
+  }
+ },
+ "encodings": {
+  "ecc_raw": {
+   "monobit_pass": 0.988,
+   "H_mean": 4.883185995699001
+  },
+  "ecc_der": {
+   "monobit_pass": 0.015,
+   "H_mean": 6.40717370582515
+  },
+  "ecc_pem": {
+   "monobit_pass": 0.0,
+   "H_mean": 5.585206420627063
+  },
+  "rsa_raw": {
+   "monobit_pass": 0.98,
+   "H_mean": 7.175931623774108
+  },
+  "rsa_pem": {
+   "monobit_pass": 0.0,
+   "H_mean": 6.024639858904098
+  }
+ },
+ "faults": {
+  "control_csprng": {
+   "n": 2000,
+   "per_key_detection": 0.0195,
+   "reject_entropy": 0.0005,
+   "reject_monobit": 0.011,
+   "reject_transition": 0.008,
+   "per_key_detection_ruleA": 0.019,
+   "duplicates": 0
+  },
+  "stuck_at": {
+   "n": 2000,
+   "per_key_detection": 1.0,
+   "reject_entropy": 1.0,
+   "reject_monobit": 0.0,
+   "reject_transition": 1.0,
+   "per_key_detection_ruleA": 1.0,
+   "duplicates": 1999
+  },
+  "biased_0.55": {
+   "n": 2000,
+   "per_key_detection": 0.178,
+   "reject_entropy": 0.002,
+   "reject_monobit": 0.166,
+   "reject_transition": 0.0135,
+   "per_key_detection_ruleA": 0.177,
+   "duplicates": 0
+  },
+  "mersenne_twister": {
+   "n": 2000,
+   "per_key_detection": 0.018,
+   "reject_entropy": 0.0005,
+   "reject_monobit": 0.0105,
+   "reject_transition": 0.007,
+   "per_key_detection_ruleA": 0.0175,
+   "duplicates": 0
+  },
+  "debian_15bit_pool": {
+   "n": 2000,
+   "per_key_detection": 0.019,
+   "reject_entropy": 0.0,
+   "reject_monobit": 0.011,
+   "reject_transition": 0.009,
+   "per_key_detection_ruleA": 0.019,
+   "duplicates": 53
+  }
+ },
+ "debian_expected_duplicates": 59.783400451404304,
+ "alarm": {
+  "baseline_p0": 0.020299999999999985,
+  "alpha": 0.001,
+  "control_csprng": {
+   "alarm_rate_within_2000": 0.0,
+   "median_keys_to_alarm": null,
+   "p95_keys_to_alarm": null,
+   "streams": 300
+  },
+  "biased_0.55": {
+   "alarm_rate_within_2000": 1.0,
+   "median_keys_to_alarm": 21.0,
+   "p95_keys_to_alarm": 66.05000000000001,
+   "streams": 300
+  },
+  "mersenne_twister": {
+   "alarm_rate_within_2000": 0.01,
+   "median_keys_to_alarm": 545.0,
+   "p95_keys_to_alarm": 545.0,
+   "streams": 100
+  },
+  "stuck_at": {
+   "keys_to_alarm": 2
+  }
+ },
+ "bias_sweep": [
+  {
+   "p1": 0.5,
+   "per_key_detection": 0.0224,
+   "alarm_rate": 0.005,
+   "median_keys_to_alarm": 783.0,
+   "p95_keys_to_alarm": 783.0
+  },
+  {
+   "p1": 0.51,
+   "per_key_detection": 0.0236,
+   "alarm_rate": 0.04,
+   "median_keys_to_alarm": 1070.0,
+   "p95_keys_to_alarm": 1750.75
+  },
+  {
+   "p1": 0.52,
+   "per_key_detection": 0.036,
+   "alarm_rate": 0.96,
+   "median_keys_to_alarm": 785.5,
+   "p95_keys_to_alarm": 1675.9999999999998
+  },
+  {
+   "p1": 0.53,
+   "per_key_detection": 0.0594,
+   "alarm_rate": 1.0,
+   "median_keys_to_alarm": 162.0,
+   "p95_keys_to_alarm": 380.7499999999998
+  },
+  {
+   "p1": 0.54,
+   "per_key_detection": 0.1034,
+   "alarm_rate": 1.0,
+   "median_keys_to_alarm": 48.0,
+   "p95_keys_to_alarm": 143.14999999999995
+  },
+  {
+   "p1": 0.55,
+   "per_key_detection": 0.1748,
+   "alarm_rate": 1.0,
+   "median_keys_to_alarm": 21.0,
+   "p95_keys_to_alarm": 52.0
+  },
+  {
+   "p1": 0.57,
+   "per_key_detection": 0.3718,
+   "alarm_rate": 1.0,
+   "median_keys_to_alarm": 7.0,
+   "p95_keys_to_alarm": 18.049999999999983
+  },
+  {
+   "p1": 0.6,
+   "per_key_detection": 0.742,
+   "alarm_rate": 1.0,
+   "median_keys_to_alarm": 2.0,
+   "p95_keys_to_alarm": 6.0
+  },
+  {
+   "p1": 0.65,
+   "per_key_detection": 0.9874,
+   "alarm_rate": 1.0,
+   "median_keys_to_alarm": 2.0,
+   "p95_keys_to_alarm": 2.0
+  }
+ ],
+ "aes_throughput_keys_per_s_single": 23468.530531098444,
+ "aes_throughput_keys_per_s_batched": 96200.4181637915
+}
